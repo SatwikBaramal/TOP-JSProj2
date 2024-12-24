@@ -1,0 +1,27 @@
+.cell{
+    width: 60px;
+    height:60px;
+    border: 2px solid saddlebrown;
+    box-shadow: 0 0 0 2px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#gamecontainer{
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width:180px;
+    margin: auto;
+}
