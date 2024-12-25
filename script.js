@@ -45,6 +45,7 @@ function changePlayer(){
 }
 
 function restartGame(){
+    statusText.setAttribute('style',"color: white");
     curPlayer = "X";
     options = ["","","","","","","","",""];
     statusText.textContent = `${curPlayer}'s turn`;
@@ -71,9 +72,11 @@ function checkWinner(){
     }
 
     if(roundWon){
+        statusText.setAttribute('style',"color: lightgreen");
         statusText.textContent = `${curPlayer} has Won!`;
     }
     else if(!options.includes("")){
+        statusText.setAttribute('style',"color: yellow");
         statusText.textContent = 'Draw';
         running = false;
     }
